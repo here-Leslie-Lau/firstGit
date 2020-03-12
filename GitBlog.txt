@@ -123,3 +123,10 @@ git reset --hard (HEAD^)**
 **git reset HEAD (filename)**
 **git checkout -- (filename)**
 
+#删除git仓库中的某个文件
+1. 首先在工作区中删除该文件
+	**rm -rf (filename)**
+	
+2. 然后在git版本库中将其删除并记录改动
+  	**git rm (filename)
+  	git commit -m "delete a file"**
