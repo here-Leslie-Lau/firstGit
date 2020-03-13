@@ -99,6 +99,12 @@ git push -u origin master
 git push origin master
 ```
 
+#从远程仓库中克隆仓库到本地
+
+```
+git clone git@github.com:(username@repositoryname)
+```
+
 <hr/>
 
 ##  git与GitHub或Gitee(码云)的远程连接
