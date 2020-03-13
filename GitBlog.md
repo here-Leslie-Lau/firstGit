@@ -105,6 +105,30 @@ git push origin master
 git clone git@github.com:(username@repositoryname)
 ```
 
+#创建git分支
+```
+git branch <branch name>
+```
+
+#删除git分支
+
+```
+git branch -d <branch name>
+```
+
+#切换分支(两种)
+
+```
+git switch <branch name>			#需要git版本2.23以上
+git checkout <branch name>
+```
+
+#合并分支
+
+```
+git merge <branch name>
+```
+
 <hr/>
 
 ##  git与GitHub或Gitee(码云)的远程连接
