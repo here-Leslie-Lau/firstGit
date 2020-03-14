@@ -4,4 +4,4 @@ git is popular
 test branch
 
 test conflict branch
-
+--no--ff
