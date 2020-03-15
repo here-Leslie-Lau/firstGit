@@ -168,6 +168,31 @@ git stash pop stash@{id}		#恢复并删除一个工作区现场
 git cherry-pick <commit_id>
 ```
 
+### 多人协作
+#### 查看远程仓库的详细信息
+
+```
+git remote -v
+```
+
+#### 抓去远程仓库的最新提交
+
+```
+git pull
+```
+
+#### 创建本地与远程仓库的对应分支
+
+```
+git switch -c <branchname> origin/<branchname>
+```
+
+#### 建立本地仓库与远程仓库的关联
+
+```
+git branch --set-upstream <branchname> origin/<branchname>
+```
+
 <hr/>
 
 ##  git与GitHub或Gitee(码云)的远程连接
