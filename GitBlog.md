@@ -193,6 +193,31 @@ git switch -c <branchname> origin/<branchname>
 git branch --set-upstream <branchname> origin/<branchname>
 ```
 
+### 标签管理
+
+#### 创建标签
+```
+git tag <tagname> [commit_id]	#commit_id为可选，如果要指定提交，则填上指定commit_id,默认最新提交
+git tag -a <tagname> -m "为标签加上描述" [commit_id]
+```
+
+#### 查看所以标签
+```
+git tag
+```
+
+#### 推送标签
+```
+git push origin <tagname>	#推送指定标签
+git push origin --tags		#推送全部未推送过的本地标签
+```
+
+#### 删除标签
+```
+git tag -d <tagname>					#删除一个本地标签
+git push origin :refs/tags/<tagname>	#删除一个远程标签
+```
+
 <hr/>
 
 ##  git与GitHub或Gitee(码云)的远程连接
