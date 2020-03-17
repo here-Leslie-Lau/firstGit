@@ -221,7 +221,7 @@ git push origin :refs/tags/<tagname>	#删除一个远程标签
 <hr/>
 
 ##  git与GitHub或Gitee(码云)的远程连接
-**GitHub：**
+**GitHub(Gitee操作相同)：**
 首先，GitHub与本地git可以采用ssh加密连接，所以就需要一个ssh公钥和密钥。创建SSH Key。在用户主目录下，看看有没有.ssh目录，如果有，再看看这个目录下有没有id_rsa和id_rsa.pub这两个文件，如果已经有了，可直接跳到下一步。如果没有，打开Shell（Windows下打开Git Bash），创建SSH Key：
 
 ```
@@ -232,3 +232,9 @@ ssh-keygen -t rsa -C "youremail@example.com"
 
 使用命令关联远程仓库后就可以在本地操作了。
 
+## git的补充知识
+#### 忽略特殊文件
+
+
+- 忽略某些文件时，需要编写`.gitignore`,要忽略什么文件就往里放即可
+- `.gitignore`文件本身要放到版本库里，并且可以对`.gitignore`做版本管理！
