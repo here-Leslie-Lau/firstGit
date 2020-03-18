@@ -218,6 +218,12 @@ git tag -d <tagname>					#删除一个本地标签
 git push origin :refs/tags/<tagname>	#删除一个远程标签
 ```
 
+### 为某个git命令配置别名
+例:
+```
+git config --global alias.showLog 'log --pretty=oneline --abbrev-commit --graph'
+```
+
 <hr/>
 
 ##  git与GitHub或Gitee(码云)的远程连接
